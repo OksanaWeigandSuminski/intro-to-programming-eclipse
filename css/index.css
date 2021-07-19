@@ -1,0 +1,87 @@
+body {
+    padding: 4.5rem;
+    margin: 0;
+    background: #edc0bf;
+    background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+  }
+h2, h3, footer{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 25px;
+  }
+h1{font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 40px;
+}
+ul.exp {
+    list-style: none;
+}
+      
+ul.exp li:before {
+    content: '✓ ';
+}
+ul.messages{
+    list-style: none;
+    padding: 0%;
+}
+.footer-logo{
+    width: 45px;
+    padding: 10px 3px;
+  }
+.submit{
+    background-color: #0077b7;
+    border-radius: 2.5px;
+    border: none;
+    cursor: pointer;
+    color:#fff;
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+}
+.submit:hover{
+    background-color: #086598;
+}
+button.remove{
+    background-color: #f44336;
+    border-radius: 2.5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color:#fff;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.card {
+    width: 400px;
+    height: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, .4);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+  }
+  /* .card-title {
+    margin-bottom: .5rem;
+  } */
+  form{
+    margin: 0 auto; 
+  }
+  input[type=text], input[type=email], textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    outline: none;
+    border: 1px solid #555;
+  }
+  
+  

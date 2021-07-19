@@ -3,6 +3,11 @@
   <head>
     <title></title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@100;200;300;400;500&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
     <section>
@@ -14,38 +19,61 @@
     I strive to build impactful projects that people could use in everyday life.
     </p>
     </section>
-    <section>
-    <h1>Experience</h1>
-    <h3>Work History</h3>
-    <ul>
-      <li>Supplemental Instruction (SI) Leader, Research Foundation Of CUNY – New York, NY</li>
-      <li>Graphic Designer Intern, InQmatic – New York, NY</li>
-    </ul>
-    <h3>Projects</h3>
-    <ol>
-      <li>Research Study on AI Ethics: Cybersecurity of Social Robots.</li>
-      <li>Cybersecurity Education for Elderly People, BMCC Virtual Make-A- Thon: Develop Software for Social Good Challenge.</li>
-      <li>Development and Deployment of Ruby on Rails ('not-alone') application.</li>
-    </ol>
-    </section>
     <section id="skills">
-      <h2>Industry Knowledge</h2>
-      <ul></ul>
+      <h1>Industry Knowledge</h1>
+      <ul class="exp"></ul>
       </section>
     <section id="tools">
-      <h2>Tools & Technologies</h2>
-      <ul></ul>
+      <h1>Tools & Technologies</h1>
+      <div style="font-size: 2.5rem;">
+        <i class="devicon-html5-plain"></i>
+        <i class="devicon-css3-plain"></i>
+        <i class="devicon-javascript-plain"></i>
+        <i class="devicon-rails-plain"></i>
+        <i class="devicon-git-plain"></i>
+        <i class="devicon-github-original"></i>
+        <i class="devicon-atom-original"></i>
+        <i class="devicon-visualstudio-plain"></i>
+        <i class="devicon-xd-plain"></i>
+        <i class="devicon-illustrator-plain"></i>
+        <i class="devicon-photoshop-plain"></i>
+        <i class="devicon-premierepro-plain"></i>
+        </div>
+        <!-- <ul></ul> -->
     </section>
     <section>
+      <h1>Experience</h1>
+      <h2>Work History</h2>
+      <ul class="exp">
+        <li>Supplemental Instruction (SI) Leader, Research Foundation Of CUNY – New York, NY</li>
+        <li>Graphic Designer Intern, InQmatic – New York, NY</li>
+      </ul>
+      <h2>Projects</h2>
+      <ol>
+        <li>Research Study on AI Ethics: Cybersecurity of Social Robots.</li>
+        <li>Cybersecurity Education for Elderly People, BMCC Virtual Make-A- Thon: Develop Software for Social Good Challenge.</li>
+        <li>Development and Deployment of Ruby on Rails ('not-alone') application.</li>
+      </ol>
+      </section>
+    <section>
     <h1>Connect</h1>
-    <p>
+    <!-- <p>
     <a href="mailto:oxanapiven@gmail.com"><b>Email</b></a><br>
     <a href='https://www.linkedin.com/in/oksana-weigand-suminski-0a7941151/'><b>LinkedIn</b><br>
     <a href='https://github.com/OksanaWeigandSuminski'><b>GitHub</b></a>
-    </p>
+    </p> -->
+    <span class="footer">
+      <div class="row">
+        <a href = "mailto:oweigandsuminski@gmail.com"><img class="footer-logo" src="images/email.svg"></a>
+        <a href = "https://github.com/OksanaWeigandSuminski?tab=overview&from=2021-03-01&to=2021-03-14" target="_blank"><img class="footer-logo" src="images/git1.png"></a>
+        <a href = "https://www.linkedin.com/in/oksana-weigand-suminski-0a7941151/" target="_blank"><img class="footer-logo" src="images/linkedIn.svg"></a>
+        <a href = "https://www.instagram.com/oxanapiven/" target="_blank"><img class="footer-logo" src="images/insta.svg"></a>
+      </div>
+    </span>
     </section>
+    <div class="card">
     <section>
-      <h2>Leave a Message</h2>
+      <h1 class="card-title">Leave a Message</h1>
       <form name="leave_message">
         <label for="name">Name:</label><br>
         <input type="text" name="name" required="true"><br>
@@ -55,15 +83,15 @@
 
         <label for="message">Message:</label><br>
         <textarea name="message" required="true"></textarea><br>
-        <button type="submit">Submit</button>
+        <button type="submit" class="submit">Submit</button>
       </form>
     </section>
     <section id="messages">
-      <h2>Messages</h2>
-      <ul>
-
+      <h1 class="card-title" style="margin-bottom: 0;">Messages</h1>
+      <ul class="messages">
       </ul>
     </section>
+  </div>
     <footer>
     </footer>
     <script src="js/index.js"></script>

@@ -3,10 +3,10 @@ var today = new Date();
 var thisYear = today.getFullYear();
 var footer = document.querySelector("footer");
 var copyright = document.createElement("p");
-copyright.innerHTML = "Oksana Weigand-Suminski " + thisYear;
+copyright.innerHTML = "&copy; " + thisYear + " Oksana Weigand-Suminski";
 footer.appendChild(copyright);
 
-var skills = ["Web Design", "Programming"];
+var skills = ["Information Graphics", "Adobe Creative Cloud", "Web Design", "Programming"];
 var skillsSection = document.getElementById("skills");
 var skillsList = skillsSection.querySelector("ul");
 for (var i = 0; i < skills.length; i++) {
@@ -14,18 +14,17 @@ for (var i = 0; i < skills.length; i++) {
 	skill.innerHTML = skills[i];
 	skillsList.appendChild(skill);
 }
-var tools = [
-	"HTML",
-	"CSS",
-	"JS",
-	"SQL",
-	"Ruby on Rails",
-	"Git",
-	"GitHub",
-	"Adobe Creative Cloud",
-	"Information Graphics",
-	"Cinema 4D",
-];
+// var tools = [
+// 	"HTML",
+// 	"CSS",
+// 	"JS",
+// 	"SQL",
+// 	"Ruby on Rails",
+// 	"Git",
+// 	"GitHub",
+// 	"Adobe Creative Cloud",
+// 	"Cinema 4D"
+// ];
 var toolsSection = document.getElementById("tools");
 var toolsList = toolsSection.querySelector("ul");
 for (var i = 0; i < tools.length; i++) {
@@ -51,6 +50,7 @@ messageForm.addEventListener("submit", (event) => {
 
 	var removeButton = document.createElement("button");
 	removeButton.innerHTML = "Remove";
+	removeButton.className = "remove";
 	removeButton.type = "button";
 	newMessage.appendChild(removeButton);
 

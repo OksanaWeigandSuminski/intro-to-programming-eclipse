@@ -10,8 +10,26 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
+    <div class="parent">
+        <div class="navbar">
+        <ul class="nav">
+          <!-- <img src="images/mouse4.svg" class="listImage"> -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#knowledge">Industry Knowledge</a></li>
+          <li><a href="#tools">Tools & Technologies</a></li>
+          <li><a href="#experience">Experience</a>
+            <ul class="nav">
+            <li><a href="#work">Work History</a></li>
+            <li><a href="#projects">Projects</a></li>
+            </ul>
+          </li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </div>
+      <!-- body content -->
+      <div class="right">
     <section>
-    <h1>About</h1>
+    <h1 id="about">About</h1>
     <p>When I am not studying or working in college, I teach myself programming and collaborate with other people on various projects.
     I believe that is where my passion lies. By programming, I train myself to think logically and creatively.
     The best advice I received was 'If you fail at first, you call it version 1.0'.
@@ -20,7 +38,7 @@
     </p>
     </section>
     <section id="skills">
-      <h1>Industry Knowledge</h1>
+      <h1 id="knowledge">Industry Knowledge</h1>
       <ul class="exp"></ul>
       </section>
     <section id="tools">
@@ -42,13 +60,13 @@
         <!-- <ul></ul> -->
     </section>
     <section>
-      <h1>Experience</h1>
-      <h2>Work History</h2>
+      <h1 id="experience">Experience</h1>
+      <h2 id="work">Work History</h2>
       <ul class="exp">
         <li>Supplemental Instruction (SI) Leader, Research Foundation Of CUNY – New York, NY</li>
         <li>Graphic Designer Intern, InQmatic – New York, NY</li>
       </ul>
-      <h2>Projects</h2>
+      <h2 id="projects">Projects</h2>
       <ol>
         <li>Research Study on AI Ethics: Cybersecurity of Social Robots.</li>
         <li>Cybersecurity Education for Elderly People, BMCC Virtual Make-A- Thon: Develop Software for Social Good Challenge.</li>
@@ -56,7 +74,7 @@
       </ol>
       </section>
     <section>
-    <h1>Connect</h1>
+    <h1 id="connect">Connect</h1>
     <!-- <p>
     <a href="mailto:oxanapiven@gmail.com"><b>Email</b></a><br>
     <a href='https://www.linkedin.com/in/oksana-weigand-suminski-0a7941151/'><b>LinkedIn</b><br>
@@ -87,13 +105,18 @@
       </form>
     </section>
     <section id="messages">
-      <h1 class="card-title" style="margin-bottom: 0;">Messages</h1>
+      <h1 class="card-title">Messages</h1>
       <ul class="messages">
       </ul>
     </section>
   </div>
+
     <footer>
     </footer>
+  </div>
+    <!-- end body content -->
+    <!-- end div class container -->
+  </div>
     <script src="js/index.js"></script>
   </body>
 </html>

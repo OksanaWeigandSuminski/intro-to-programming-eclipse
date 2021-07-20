@@ -109,19 +109,9 @@ button.remove{
   content: "";
   flex: auto;
 }
-/* .navbar {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  justify-content: space-between;
-  z-index: 200;
-  background-color: white;
-} */
+
 ul.nav li a {
   list-style-type: none;
-  /* display: block; */
   color: #000;
   padding: 5px 5px;
   text-decoration: none;
@@ -143,20 +133,25 @@ li a.active:hover {
   justify-content: space-around;
 }
 }
-ul.nav {
+ul.nav, ul.repo {
   list-style-type: none;
 }
-ul.nav li::before {   
+ul.nav li::before, ul.repo li::before {   
   content: '';   
   display: inline-block;   
   height: 40px;   
   width: 40px;    
-  background-size: 20px;   
-  background-image: url('/images/mouse4.svg');   
+  background-size: 20px;      
   background-repeat: no-repeat;   
   margin-right: 10px;
   background-position: center center;
   vertical-align: middle;
+}
+ul.nav li::before{
+  background-image: url('/images/mouse4.svg');
+}
+ul.repo li::before{
+  background-image: url('/images/github.svg'); 
 }
 @media (min-width: 760px) {
 .parent > .navbar {
@@ -164,4 +159,18 @@ ul.nav li::before {
 	top: 2rem;
 	align-self: start;
 }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }

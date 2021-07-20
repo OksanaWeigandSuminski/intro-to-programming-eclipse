@@ -1,5 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-    padding: 4.5rem;
+    padding: 1.5rem;
     margin: 0;
     background: #edc0bf;
     background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
@@ -16,6 +19,11 @@ h1{font-family: 'Amatic SC', cursive;
     font-weight: 700;
     font-size: 40px;
 }
+#me{
+  font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
 ul.exp {
     list-style: none;
 }
@@ -28,8 +36,14 @@ ul.messages{
     padding: 0%;
 }
 .footer-logo{
-    width: 45px;
+    width: 25px;
     padding: 10px 3px;
+  }
+  footer p{
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    float: left;
+    text-align: left;
   }
 .submit{
     background-color: #0077b7;
@@ -59,16 +73,11 @@ button.remove{
     width: 400px;
     height: auto;
     padding: 2rem;
-    border-radius: 1rem;
+    /* margin: auto; */
+    border-radius: 0.5rem;
     background: rgba(255, 255, 255, .4);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
-  }
-  /* .card-title {
-    margin-bottom: .5rem;
-  } */
-  form{
-    margin: 0 auto; 
   }
   input[type=text], input[type=email], textarea, select {
     width: 100%;
@@ -83,5 +92,76 @@ button.remove{
     outline: none;
     border: 1px solid #555;
   }
-  
-  
+
+.parent{
+  display: flex;
+  /* flex-flow: column wrap;
+  justify-content: space-around; */
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+.right,.navbar  {
+  flex-grow: 1;
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+.right:after, .navbar {
+  content: "";
+  flex: auto;
+}
+/* .navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  z-index: 200;
+  background-color: white;
+} */
+ul.nav li a {
+  list-style-type: none;
+  /* display: block; */
+  color: #000;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+li a:hover:not(.active) {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+} 
+li a.active:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+} 
+@media all and (max-width: 800px){
+ ul.nav {
+  justify-content: space-around;
+}
+}
+ul.nav {
+  list-style-type: none;
+}
+ul.nav li::before {   
+  content: '';   
+  display: inline-block;   
+  height: 40px;   
+  width: 40px;    
+  background-size: 20px;   
+  background-image: url('/images/mouse4.svg');   
+  background-repeat: no-repeat;   
+  margin-right: 10px;
+  background-position: center center;
+  vertical-align: middle;
+}
+@media (min-width: 760px) {
+.parent > .navbar {
+	position: sticky;
+	top: 2rem;
+	align-self: start;
+}
+}

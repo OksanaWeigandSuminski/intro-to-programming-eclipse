@@ -98,7 +98,7 @@ function githubRequest(repositories) {
 	var projectList = projectSection.querySelector("ul");
 	for (var i = 0; i < repositories.length; i++) {
 		var project = document.createElement("li");
-		project.innerHTML = repositories[i].name;
+		project.innerHTML = `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`;
 		projectList.appendChild(project);
 	}
 }

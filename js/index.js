@@ -65,6 +65,22 @@ messageForm.addEventListener("submit", (event) => {
 	document.querySelector("form").reset();
 });
 
+// AJAX
+var githubRequest = new XMLHttpRequest();
+githubRequest.addEventListener("load", function(event) {
+		var repositories = JSON.parse(githubRequest.response);
+		console.log(repositories);
+		var projectSection = document.getElementById("projects");
+		var projectList = projectSection.querySelector("ul");
+		for (var i = 0; i<repositories.length; i++){
+			var project = document.createElement("li");
+			project.innerHTML = repositories[i].name
+			projectList.appendChild(project);
+		}
+});
+githubRequest.open('GET','https://api.github.com/users/OksanaWeigandSuminski/repos');
+githubRequest.send();
+
 // Smooth scrolling for browsers that don't support CSS smooth scrolling
 if (window.getComputedStyle(document.documentElement).scrollBehavior !== 'smooth') {
     document.querySelectorAll('a[href^="#"]').forEach(internalLink => {

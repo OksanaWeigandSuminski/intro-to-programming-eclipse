@@ -70,16 +70,47 @@ button.remove{
     margin-left: 10px;
     margin-top: 15px;
 }
-.card {
+.card, .card_p {
     width: 400px;
     height: auto;
     padding: 2rem;
+    font-size: 14px;
     /* margin: auto; */
     border-radius: 0.5rem;
     background: rgba(255, 255, 255, .4);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
   }
+  .card_p{
+    margin-top: 10px;
+    padding: 1rem;
+  }
+  .card-title{
+    font-weight: 300;
+  }
+  /* .shape {
+    position: absolute;
+    width: 150px;
+    top: .5rem;
+    left: .5rem;
+  }  */
+  .shape1, .shape2, .shape3 {
+    position: relative;
+    width: 150px;
+    top: 5rem;
+    left: -6rem;
+    margin-top: 0;
+  }
+  .shape2{
+    width: 90px;
+    top: 4rem;
+    left: -4.5rem;
+  }
+  .shape3{
+    width: 180px;
+    top: 5rem;
+    left: -5rem;
+  } 
   input[type=text], input[type=email], textarea, select {
     width: 100%;
     padding: 12px 20px;

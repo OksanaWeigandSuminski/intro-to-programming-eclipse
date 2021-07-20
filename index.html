@@ -3,7 +3,7 @@
   <head>
     <title></title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@100;200;300;400;500&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
@@ -68,14 +68,29 @@
       </ul>
       <section id="projects">
       <div class="row">
+      <!-- left side of projects -->
       <div class="column">
       <h2>Projects</h2>
-      <ol>
-        <li>Research Study on AI Ethics: Cybersecurity of Social Robots.</li>
-        <li>Cybersecurity Education for Elderly People, BMCC Virtual Make-A- Thon: Develop Software for Social Good Challenge.</li>
-        <li>Development and Deployment of Ruby on Rails ('not-alone') application.</li>
-      </ol>
-    </div>
+      <img class="shape1" src="images/python.svg" alt="python icon">
+        <div class="card_p">
+        <p class="card-title">Research Study on AI Ethics: Cybersecurity of Social Robots.</p>
+        <p>Analysis of an educational smart robotic car for security and privacy vulnerabilities through its Python software codebase</p>
+        <p>Examination of social robots on retrieving sensitive information from the users</p>
+        </div>
+        <img class="shape2" src="images/bootstrap.svg" alt="bootstrap icon">
+        <div class="card_p">
+        <p class="card-title">Cybersecurity Education for Elderly People, BMCC Virtual Make-A- Thon: Develop Software for Social Good Challenge.</p>
+        <p>Collaboration with a fellow student in the development of an educational website that includes online quizzes to help people in the age group of 65+ to become familiar with terms and concepts of cybersecurity risks</p>
+        <p>Creating a prototype of a mobile application with AI-powered speech recognition and transcription using Android Studio</p>
+        </div>
+        <img class="shape3" src="images/rails.png" alt="rails icon">
+        <div class="card_p">
+        <p class="card-title">Development and Deployment of Ruby on Rails ('not-alone') application.</p>
+        <p>Collaboration with a team of 5 in the development of an application for survivors of domestic violence ('not-alone') to help in finding available resources, connecting with appropriate institutions and services, like agencies and family justice centers</p>
+        <p>The application is created in Ruby on Rails with role-based access control through administrators, interns, and volunteers</p>
+      </div>
+      </div>
+      <!-- right side of projects -->
       <div class="column">
       <h2>GitHub Repositories</h2>
       <ul class="repo">
@@ -97,7 +112,7 @@
     </section>
     <div class="card">
     <section>
-      <h1 class="card-title">Leave a Message</h1>
+      <h2 class="card-title">Leave a Message</h2>
       <form name="leave_message">
         <label for="name">Name:</label><br>
         <input type="text" name="name" required="true"><br>
@@ -111,7 +126,7 @@
       </form>
     </section>
     <section id="messages">
-      <h1 class="card-title">Messages</h1>
+      <h2 class="card-title">Messages</h2>
       <ul class="messages">
       </ul>
     </section>

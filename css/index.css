@@ -20,9 +20,10 @@ h1{font-family: 'Amatic SC', cursive;
     font-size: 40px;
 }
 #me{
-  font-family: 'Poppins', sans-serif;
-    font-weight: 100;
-    font-size: 30px;
+  font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 25px;
 }
 ul.exp {
     list-style: none;

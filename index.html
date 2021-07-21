@@ -1,127 +1,237 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <title></title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@100;200;300;400;500&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
-    <link rel="stylesheet" href="css/index.css">
-  </head>
-  <body>
-    <div class="parent">
-        <div class="navbar">
-        <ul class="nav">
-          <li><a class="active" href="#about">About</a></li>
-          <li><a href="#knowledge">Industry Knowledge</a></li>
-          <li><a href="#tools">Tools & Technologies</a></li>
-          <li><a href="#experience">Experience</a>
-            <ul class="nav">
-            <li><a href="#work">Work History</a></li>
-            <li><a href="#projects">Projects</a></li>
-            </ul>
-          </li>
-          <li><a href="#connect">Connect</a></li>
-        </ul>
-      </div>
-      <!-- body content -->
-      <div class="right">
-        <h1 id="me">Oksana Weigand-Suminski</h1>
-    <section>
-    <h1 id="about">About</h1>
-    <p>When I am not studying or working in college, I teach myself programming and collaborate with other people on various projects.
-    I believe that is where my passion lies. By programming, I train myself to think logically and creatively.
-    The best advice I received was 'If you fail at first, you call it version 1.0'.
-    I now have empathy for issues alongside an appreciation for the structure, order, and quality.
-    I strive to build impactful projects that people could use in everyday life.
-    </p>
-    </section>
-    <section id="skills">
-      <h1 id="knowledge">Industry Knowledge</h1>
-      <ul class="exp"></ul>
-      </section>
-    <section id="tools">
-      <h1>Tools & Technologies</h1>
-      <div style="font-size: 2.5rem;">
-        <i class="devicon-html5-plain"></i>
-        <i class="devicon-css3-plain"></i>
-        <i class="devicon-javascript-plain"></i>
-        <i class="devicon-rails-plain"></i>
-        <i class="devicon-git-plain"></i>
-        <i class="devicon-github-original"></i>
-        <i class="devicon-atom-original"></i>
-        <i class="devicon-visualstudio-plain"></i>
-        <i class="devicon-xd-plain"></i>
-        <i class="devicon-illustrator-plain"></i>
-        <i class="devicon-photoshop-plain"></i>
-        <i class="devicon-premierepro-plain"></i>
-        </div>
-        <!-- <ul></ul> -->
-    </section>
-    <section>
-      <h1 id="experience">Experience</h1>
-      <h2 id="work">Work History</h2>
-      <ul class="exp">
-        <li>Supplemental Instruction (SI) Leader, Research Foundation Of CUNY – New York, NY</li>
-        <li>Graphic Designer Intern, InQmatic – New York, NY</li>
-      </ul>
-      <section id="projects">
-      <div class="row">
-      <div class="column">
-      <h2>Projects</h2>
-      <ol>
-        <li>Research Study on AI Ethics: Cybersecurity of Social Robots.</li>
-        <li>Cybersecurity Education for Elderly People, BMCC Virtual Make-A- Thon: Develop Software for Social Good Challenge.</li>
-        <li>Development and Deployment of Ruby on Rails ('not-alone') application.</li>
-      </ol>
-    </div>
-      <div class="column">
-      <h2>GitHub Repositories</h2>
-      <ul class="repo">
-      </ul>
-    </div>
-  </div>
-      </section>
-    </section>
-    <section>
-    <h1 id="connect">Connect</h1>
-    <span class="footer">
-      <div class="row">
-        <a href = "mailto:oweigandsuminski@gmail.com"><img class="footer-logo" src="images/email.svg"></a>
-        <a href = "https://github.com/OksanaWeigandSuminski?tab=overview&from=2021-03-01&to=2021-03-14" target="_blank"><img class="footer-logo" src="images/git1.png"></a>
-        <a href = "https://www.linkedin.com/in/oksana-weigand-suminski-0a7941151/" target="_blank"><img class="footer-logo" src="images/linkedIn.svg"></a>
-        <a href = "https://www.instagram.com/oxanapiven/" target="_blank"><img class="footer-logo" src="images/insta.svg"></a>
-      </div>
-    </span>
-    </section>
-    <div class="card">
-    <section>
-      <h1 class="card-title">Leave a Message</h1>
-      <form name="leave_message">
-        <label for="name">Name:</label><br>
-        <input type="text" name="name" required="true"><br>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@100;200;300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
+		/>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div class="parent">
+			<div class="navbar">
+				<ul class="nav">
+					<li><a class="active" href="#about">About</a></li>
+					<li><a href="#knowledge">Industry Knowledge</a></li>
+					<li><a href="#tools">Tools & Technologies</a></li>
+					<li>
+						<a href="#experience">Experience</a>
+						<ul class="nav">
+							<li><a href="#work">Work History</a></li>
+							<li><a href="#projects">Projects</a></li>
+						</ul>
+					</li>
+					<li><a href="#connect">Connect</a></li>
+				</ul>
+			</div>
+			<!-- body content -->
+			<div class="right">
+				<h1 id="me">Oksana Weigand-Suminski</h1>
+				<section>
+					<h1 id="about">About</h1>
+					<p>
+						When I am not studying or working in college, I teach myself
+						programming and collaborate with other people on various projects. I
+						believe that is where my passion lies. By programming, I train
+						myself to think logically and creatively. The best advice I received
+						was 'If you fail at first, you call it version 1.0'. I now have
+						empathy for issues alongside an appreciation for the structure,
+						order, and quality. I strive to build impactful projects that people
+						could use in everyday life.
+					</p>
+				</section>
+				<section id="skills">
+					<h1 id="knowledge">Industry Knowledge</h1>
+					<ul class="exp"></ul>
+				</section>
+				<section id="tools">
+					<h1>Tools & Technologies</h1>
+					<div style="font-size: 2.5rem">
+						<span title="HTML 5"><i class="devicon-html5-plain"></i></span>
+						<i class="devicon-css3-plain"></i>
+						<i class="devicon-bootstrap-plain"></i>
+						<i class="devicon-javascript-plain"></i>
+						<i class="devicon-rails-plain"></i>
+						<i class="devicon-git-plain"></i>
+						<i class="devicon-github-original"></i>
+						<i class="devicon-atom-original"></i>
+						<i class="devicon-visualstudio-plain"></i>
+						<i class="devicon-xd-plain"></i>
+						<i class="devicon-illustrator-plain"></i>
+						<i class="devicon-photoshop-plain"></i>
+						<i class="devicon-premierepro-plain"></i>
+					</div>
+					<!-- <ul></ul> -->
+				</section>
+				<section>
+					<h1 id="experience">Experience</h1>
+					<h2 id="work">Work History</h2>
+					<ul class="exp">
+						<li>
+							Supplemental Instruction (SI) Leader, Research Foundation Of CUNY
+							– New York, NY
+							<ul class="exp1">
+								<li>
+									Help students to understand course concepts and study skills
+								</li>
+								<li>Demonstrate successful academic strategies and habits</li>
+							</ul>
+						</li>
+						<li>
+							Graphic Designer Intern, InQmatic – New York, NY
+							<ul class="exp1">
+								<li>
+									Create infographics and educational animations with Powtoon
+								</li>
+								<li>
+									Create designs and collaborate with the technical team to
+									complete projects
+								</li>
+								<li>
+									Develop print materials such as brochures, banners, and signs
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<section id="projects">
+						<div class="row">
+							<!-- left side of projects -->
+							<div class="column">
+								<h2>Latest Projects</h2>
+								<img class="shape1" src="images/python.svg" alt="python icon" />
+								<div class="card_p">
+									<p class="card-title">
+										Research Study on AI Ethics: Cybersecurity of Social Robots.
+									</p>
+									<p>
+										Analysis of an educational smart robotic car for security
+										and privacy vulnerabilities through its Python software
+										codebase
+									</p>
+									<p>
+										Examination of social robots on retrieving sensitive
+										information from the users
+									</p>
+									<div class="box">
+										<div class="btn btn-one">
+											<span>SHOW</span>
+										</div>
+									</div>
+								</div>
+								<img
+									class="shape2"
+									src="images/bootstrap.svg"
+									alt="bootstrap icon"
+								/>
+								<div class="card_p">
+									<p class="card-title">
+										Cybersecurity Education for Elderly People, BMCC Virtual
+										Make-A- Thon: Develop Software for Social Good Challenge.
+									</p>
+									<p>
+										Collaboration with a fellow student in the development of an
+										educational website that includes online quizzes to help
+										people in the age group of 65+ to become familiar with terms
+										and concepts of cybersecurity risks
+									</p>
+									<p>
+										Creating a prototype of a mobile application with AI-powered
+										speech recognition and transcription using Android Studio
+									</p>
+									<div class="box">
+										<div class="btn btn-one">
+											<span>SHOW</span>
+										</div>
+									</div>
+								</div>
+								<img class="shape3" src="images/rails.png" alt="rails icon" />
+								<div class="card_p">
+									<p class="card-title">
+										Development and Deployment of Ruby on Rails ('not-alone')
+										application.
+									</p>
+									<p>
+										Collaboration with a team of 5 in the development of an
+										application for survivors of domestic violence ('not-alone')
+										to help in finding available resources, connecting with
+										appropriate institutions and services, like agencies and
+										family justice centers
+									</p>
+									<p>
+										The application is created in Ruby on Rails with role-based
+										access control through administrators, interns, and
+										volunteers
+									</p>
+									<div class="box">
+										<div class="btn btn-one">
+											<span>SHOW</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- right side of projects -->
+							<div class="column">
+								<h2>GitHub Repositories</h2>
+								<ul class="repo"></ul>
+							</div>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h1 id="connect">Connect</h1>
+					<span class="footer">
+						<div class="row">
+							<a href="mailto:oweigandsuminski@gmail.com"
+								><img class="footer-logo" src="images/email.svg"
+							/></a>
+							<a
+								href="https://github.com/OksanaWeigandSuminski?tab=overview&from=2021-03-01&to=2021-03-14"
+								target="_blank"
+								><img class="footer-logo" src="images/git1.png"
+							/></a>
+							<a
+								href="https://www.linkedin.com/in/oksana-weigand-suminski-0a7941151/"
+								target="_blank"
+								><img class="footer-logo" src="images/linkedIn.svg"
+							/></a>
+							<a href="https://www.instagram.com/oxanapiven/" target="_blank"
+								><img class="footer-logo" src="images/insta.svg"
+							/></a>
+						</div>
+					</span>
+				</section>
+				<div class="card">
+					<section>
+						<h2 class="card-title">Leave a Message</h2>
+						<form name="leave_message">
+							<label for="name">Name:</label><br />
+							<input type="text" name="name" required="true" /><br />
 
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" required="true"><br>
+							<label for="email">Email:</label><br />
+							<input type="email" name="email" required="true" /><br />
 
-        <label for="message">Message:</label><br>
-        <textarea name="message" required="true"></textarea><br>
-        <button type="submit" class="submit">Submit</button>
-      </form>
-    </section>
-    <section id="messages">
-      <h1 class="card-title">Messages</h1>
-      <ul class="messages">
-      </ul>
-    </section>
-  </div>
-  </div>
-    <!-- end body content -->
-    <!-- end div class container -->
-  </div>
-  <footer>
-  </footer>
-    <script src="js/index.js"></script>
-  </body>
+							<label for="message">Message:</label><br />
+							<textarea name="message" required="true"></textarea><br />
+							<button type="submit" class="submit">Submit</button>
+						</form>
+					</section>
+					<section id="messages">
+						<h2 class="card-title">Messages</h2>
+						<ul class="messages"></ul>
+					</section>
+				</div>
+			</div>
+			<!-- end body content -->
+		</div>
+		<footer></footer>
+		<script src="js/index.js"></script>
+	</body>
 </html>

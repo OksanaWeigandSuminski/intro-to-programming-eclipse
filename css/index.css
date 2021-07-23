@@ -212,6 +212,19 @@ ul.repo li::before {
 		align-self: start;
 	}
 }
+@media only screen and (max-width: 500px) {
+	.shape1, .shape2, .shape3{
+		/* flex-direction: column; */
+		width:30%;
+		align-self: center;
+	}
+	.card{
+		width: 80%;
+	}
+	.card_p{
+		width: 90%;
+	}
+}
 
 .row {
 	display: flex;
@@ -305,4 +318,8 @@ a.github {
 .btn-one:hover::after {
 	opacity: 0;
 	transform: scale(0.1, 1);
+}
+a.redirect{
+	text-decoration: none;
+	color: #000;
 }
